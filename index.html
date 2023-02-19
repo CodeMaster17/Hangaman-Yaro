@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- fonts -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/broadway" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="outerContainer">
+      <div class="navigationContainer">
+        <button><img src="./img/backBtn.png" alt="" /></button>
+        <div class="scoreContainer">
+          <img src="./img/coinsSymbol.png" alt="" class="gamelogo" />
+          <p id="gameScore">000</p>
+        </div>
+      </div>
+      <div class="hangmanContainer">
+        <div class="leftHangmanContainer">
+          <img src="./img/Man.png" alt="" />
+        </div>
+        <div class="rightHangmanContainer">
+          <img src="./img/hangingBar.png" alt="" />
+        </div>
+      </div>
+      <div class="gameContent">
+        <p id="gameHint">
+          Words having similar meaning as <span id="hint"> text </span>
+        </p>
+        <div class="inputBoxes">
+          <form action="">
+            <input type="text" class="box" id="inputTagId" />
+          </form>
+        </div>
+      </div>
+      <div class="alphabetKeysContainer">
+        <div class="alphabetInnerContainer">
+          <div class="row">
+            <button class="textBtn">A</button>
+            <button class="textBtn">B</button>
+            <button class="textBtn">C</button>
+            <button class="textBtn">D</button>
+            <button class="textBtn">E</button>
+            <button class="textBtn">F</button>
+          </div>
+          <div class="row">
+            <button class="textBtn">G</button>
+            <button class="textBtn">H</button>
+            <button class="textBtn">I</button>
+            <button class="textBtn">J</button>
+            <button class="textBtn">K</button>
+            <button class="textBtn">L</button>
+          </div>
+          <div class="row">
+            <button class="textBtn">M</button>
+            <button class="textBtn">N</button>
+            <button class="textBtn">O</button>
+            <button class="textBtn">P</button>
+            <button class="textBtn">Q</button>
+            <button class="textBtn">R</button>
+          </div>
+          <div class="row">
+            <button class="textBtn">S</button>
+            <button class="textBtn">T</button>
+            <button class="textBtn">U</button>
+            <button class="textBtn">V</button>
+            <button class="textBtn">W</button>
+            <button class="textBtn">X</button>
+          </div>
+          <div class="rowbottom">
+            <button class="textBtn">Y</button>
+            <button class="textBtn">Z</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="./index.js"></script>
+  </body>
+</html>
